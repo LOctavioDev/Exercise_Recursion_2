@@ -1,18 +1,6 @@
-# Importamos la función 'print' para mostrar el estado del puzzle.
 from __future__ import print_function
 
-# Función para generar todas las posibles jugadas que se pueden realizar para mover el número
-# del espacio vacío a una de las ocho casillas adyacentes.
 def move_puzzle(n, source, target):
-  """
-  Args:
-    n: El número total de movimientos que se pueden realizar.
-    source: La posición actual del espacio vacío.
-    target: La posición deseada del espacio vacío.
-
-  Returns:
-    Una lista de tuplas que representan las posibles jugadas.
-  """
 
   if n == 1:
     if is_solved(source, target):
@@ -60,4 +48,4 @@ for source, target in moves:
     initial_state[source][0], initial_state[target][0] = initial_state[target][0], initial_state[source][0]
     step += 1
 
-print("¡Puzzle resuelto!")
+print("resuelto")
