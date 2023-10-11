@@ -1,0 +1,16 @@
+import javax.swing.JOptionPane;
+
+public class Tienda{
+    public static void main(String[] args) {
+        
+        byte [] arreglo = {1,2,3,4,5,6,7,8,9,10};
+        String cadena = "";
+        
+        for (byte i : arreglo) {
+            cadena += i + "\n";
+        }
+        
+        JOptionPane.showMessageDialog(null, cadena);
+
+    }
+}
